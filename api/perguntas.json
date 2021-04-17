@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Qual a capital do Brasil ?",
+    "respostas": {
+      "rc": "Brasilia",
+      "r1": "Salvador",
+      "r2": "Rio de Janeiro",
+      "r3": "Amazonas"
+    }
+  }
+]
