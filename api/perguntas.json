@@ -8,5 +8,35 @@
       "r2": "Rio de Janeiro",
       "r3": "Amazonas"
     }
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual a capital da Bahia ?",
+    "respostas": {
+      "rc": "Salvador",
+      "r1": "Recife",
+      "r2": "João Pessoas",
+      "r3": "São Paulo"
+    }
+  },
+  {
+    "id": 3,
+    "pergunta": "1 + 1 ?",
+    "respostas": {
+      "rc": "2",
+      "r1": "4",
+      "r2": "1",
+      "r3": "4"
+    }
+  },
+  {
+    "id": 4,
+    "pergunta": "Cor de céu",
+    "respostas": {
+      "rc": "Azul",
+      "r1": "Roxo",
+      "r2": "Verde",
+      "r3": "Preto"
+    }
   }
 ]
