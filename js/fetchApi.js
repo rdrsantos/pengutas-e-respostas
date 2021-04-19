@@ -1,4 +1,5 @@
 export default function fetchApi(){
+
   fetch("../api/perguntas.json")
   .then(r => {
     return r.json()
@@ -9,11 +10,13 @@ export default function fetchApi(){
 
   function criarElemento(obj) {
     let el = obj
-    let elParent = document.querySelector(".perguntas")
+    let elParent = document.querySelector(".perguntas-container")
     el.forEach(el => {
       elParent.innerHTML += `
-        <h2>${el.pergunta}</h2>
+      <div class="perguntas">
+        <h2 class="pergunta-titulo">${el.pergunta}</h2>
         ${gerarPerguntasRandom(el)}
+      </div>
       `
     })
   }
@@ -44,4 +47,7 @@ export default function fetchApi(){
 
     return shuffle(btns)
   }
+
+
+
 }
