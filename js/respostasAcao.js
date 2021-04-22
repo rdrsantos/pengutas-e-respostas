@@ -1,6 +1,7 @@
+import {resCertas} from "./informacoes.js"
 export default function respostasAcao(){
   const respostas = document.querySelectorAll('.perguntas')
-
+  let corretas = 0
   respostas.forEach(resposta => {
     let resp = resposta.querySelectorAll("button")
     resp.forEach(item => {
@@ -12,6 +13,8 @@ export default function respostasAcao(){
         if (item.id === "rc") {
           item.style.backgroundColor = "green"
           item.innerHTML = item.innerText + " - Resposta Correta"
+          corretas++
+          resCertas.innerHTML = corretas
         }
         else {
           item.style.backgroundColor = "red"

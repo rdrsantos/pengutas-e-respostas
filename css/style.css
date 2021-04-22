@@ -71,3 +71,16 @@
 .load.active::before{
   margin-left: 0;
 }
+
+.infos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infos p, .infos span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}

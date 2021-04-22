@@ -1,4 +1,5 @@
 import respostasAcao from "./respostasAcao.js"
+import passarPerguntas from "./passarPerguntas.js"
 export default function fetchApi(){
 
   fetch("../api/perguntas.json")
@@ -8,6 +9,7 @@ export default function fetchApi(){
   .then(r => {
     criarElemento(r)
     respostasAcao()
+    passarPerguntas()
   })
 
   function criarElemento(obj) {
