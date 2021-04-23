@@ -1,5 +1,6 @@
 import respostasAcao from "./respostasAcao.js"
 import passarPerguntas from "./passarPerguntas.js"
+import removerVirgulas from "./removerVirgulas.js"
 export default function fetchApi(){
 
   fetch("../api/perguntas.json")
@@ -10,6 +11,7 @@ export default function fetchApi(){
     criarElemento(r)
     respostasAcao()
     passarPerguntas()
+    removerVirgulas()
   })
 
   function criarElemento(obj) {
@@ -34,8 +36,6 @@ export default function fetchApi(){
     r2.push(obj.respostas.r2)    
     const r3 = []
     r3.push(obj.respostas.r3)
-
-    const random = Number.parseInt(Math.random() * 4)
 
     const btns = [
       `<button id='rc' class='pergunta-btn'>${rc}</button>`,

@@ -1,8 +1,8 @@
 import {perguntas, tempo} from "./informacoes.js"
 export default function passarPerguntas(){
-
   const perguntasDiv = document.querySelectorAll(".perguntas")
   let perguntasInicio = 1
+  let respostasBtns = document.querySelectorAll(".pergunta-btn")
 
   perguntas.innerHTML = `${perguntasInicio} / ${perguntasDiv.length}`
   perguntasDiv.forEach(item => {
@@ -10,23 +10,23 @@ export default function passarPerguntas(){
   })
   perguntasDiv[0].style.display = "flex"
 
-  let c = 5
+  let c = 10
   let counter = 0
   let timer;
   
   function cronometro() {
     timer = setInterval(() => {
-      tempo.innerText = c--
+      tempo.innerText = c--  
+      (c <= 4) ? tempo.style.color = "darkred" : tempo.style.color = "#fff"
+      
       if (c < 0) {
-        clearInterval(timer)
+        c = 10
         passarPergunta()
-        cronometro()
-        c = 5
       }
-   }, 1000)
+    }, 1000)
   }
   cronometro()
-
+  
   function passarPergunta(){
     perguntas.innerHTML = `${++perguntasInicio} / ${perguntasDiv.length}`
     perguntasDiv.forEach(item => {
@@ -34,12 +34,24 @@ export default function passarPerguntas(){
     })
     counter++
     if (counter === perguntasDiv.length) {
+      clearInterval(timer)
       counter = perguntasDiv.length - 1
       perguntasDiv.forEach(item => {
         item.style.display = "flex"
       })
       perguntas.innerHTML = `${perguntasDiv.length} / ${perguntasDiv.length}`
+      respostasBtns.forEach(item => item.disabled = true)
     } 
     perguntasDiv[counter].style.display = "flex"
   }
+
+  respostasBtns.forEach(item => {
+    item.addEventListener('click', () => {
+      clearInterval(timer)
+      setTimeout(() => {
+        c = 0
+        cronometro()
+      }, 2000)
+    })
+  })
 }

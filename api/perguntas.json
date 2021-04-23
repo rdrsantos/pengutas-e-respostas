@@ -1,42 +1,102 @@
 [
   {
     "id": 1,
-    "pergunta": "Qual a capital do Brasil ?",
+    "pergunta": "Quem proclamou a Independência do Brasil?",
     "respostas": {
-      "rc": "Brasilia",
-      "r1": "Salvador",
-      "r2": "Rio de Janeiro",
-      "r3": "Amazonas"
+      "rc": "D. Pedro I",
+      "r1": "Napoleão Bonaparte",
+      "r2": "Cristovão Colombo",
+      "r3": "D. Pedro II"
     }
   },
   {
     "id": 2,
-    "pergunta": "Qual a capital da Bahia ?",
+    "pergunta": "Quantas cores há no arco-íris?",
     "respostas": {
-      "rc": "Salvador",
-      "r1": "Recife",
-      "r2": "João Pessoas",
-      "r3": "São Paulo"
+      "rc": "7",
+      "r1": "5",
+      "r2": "9",
+      "r3": "8"
     }
   },
   {
     "id": 3,
-    "pergunta": "1 + 1 ?",
+    "pergunta": "Quantos séculos há em um milênio?",
     "respostas": {
-      "rc": "2",
-      "r1": "4",
-      "r2": "1",
-      "r3": "3"
+      "rc": "10 séculos",
+      "r1": "100 séculos",
+      "r2": "1 séculos",
+      "r3": "1000 séculos"
     }
   },
   {
     "id": 4,
-    "pergunta": "Cor de céu",
+    "pergunta": "Qual o maior planeta do Sistema Solar?",
     "respostas": {
-      "rc": "Azul",
-      "r1": "Roxo",
-      "r2": "Verde",
-      "r3": "Preto"
+      "rc": "Júpiter",
+      "r1": "Marte",
+      "r2": "Terra",
+      "r3": "Plutão"
+    }
+  },
+  {
+    "id": 5,
+    "pergunta": "Qual é o maior animal vivo do planeta Terra?",
+    "respostas": {
+      "rc": "Baleia azul.",
+      "r1": "Elefante",
+      "r2": "Girafa",
+      "r3": "Gorila"
+    }
+  },
+  {
+    "id": 6,
+    "pergunta": "Quantos estados fazem parte da região sudeste?",
+    "respostas": {
+      "rc": "4",
+      "r1": "3",
+      "r2": "2",
+      "r3": "5"
+    }
+  },
+  {
+    "id": 7,
+    "pergunta": "Qual a capital do Paraná?",
+    "respostas": {
+      "rc": "Curitiba",
+      "r1": "Salvador",
+      "r2": "Manaus",
+      "r3": "Paraná"
+    }
+  },
+  {
+    "id": 8,
+    "pergunta": "Quantas vezes o Brasil foi campeão da copa do mundo?",
+    "respostas": {
+      "rc": "5",
+      "r1": "7",
+      "r2": "4",
+      "r3": "6"
+    }
+  },
+  {
+    "id": 9,
+    "pergunta": "Qual é o maior país do mundo em território?",
+    "respostas": {
+      "rc": "Rússia",
+      "r1": "Brasil",
+      "r2": "Alemanha",
+      "r3": "Turquia"
+    }
+  },
+  {
+    "id": 10,
+    "pergunta": "Quantos centímetros tem um quilômetro?",
+    "respostas": {
+      "rc": "100.000 cm",
+      "r1": "10.000 cm",
+      "r2": "1.000 cm",
+      "r3": "10.000.000 cm"
     }
   }
 ]

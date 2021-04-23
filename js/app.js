@@ -1,3 +1,7 @@
 import fetchApi from "./fetchApi.js"
+const btnComecar = document.querySelector('.comecar button')
 
-window.addEventListener("load", fetchApi)
+btnComecar.addEventListener("click", () => {
+  btnComecar.style.display = 'none'
+  fetchApi()
+})

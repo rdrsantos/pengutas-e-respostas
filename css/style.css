@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #ccc;
+}
+
 .container{
   max-width: 900px;
   margin: 0 auto;
@@ -11,7 +15,6 @@
   background-color: #87f;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
-  /* position: relative; */
 }
 
 .titulo{
@@ -28,12 +31,13 @@
 
 .perguntas{
   width: 700px;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   background-color: #0005;
   padding: 10px 40px;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
 }
 
 .pergunta-titulo{
@@ -49,6 +53,7 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 
@@ -83,4 +88,37 @@
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.comecar button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-size: 2rem;
+  border: 5px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+  .container{
+    max-width: 100%;
+  }
+  .perguntas{
+    width: 100%;
+  }
+  .perguntas .pergunta-titulo{
+    font-size: 16px;
+  }
+  .infos p{
+    font-size: 14px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 0 2px;
+  }
+  .pergunta-btn{
+    font-size: 1rem;
+  }
 }
