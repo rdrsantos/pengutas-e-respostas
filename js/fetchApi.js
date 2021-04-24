@@ -3,7 +3,7 @@ import passarPerguntas from "./passarPerguntas.js"
 import removerVirgulas from "./removerVirgulas.js"
 export default function fetchApi(){
 
-  fetch("../api/perguntas.json")
+  fetch("./api/perguntas.json")
   .then(r => {
     return r.json()
   })
