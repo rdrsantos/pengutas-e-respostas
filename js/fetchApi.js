@@ -3,7 +3,7 @@ import passarPerguntas from "./passarPerguntas.js"
 import removerVirgulas from "./removerVirgulas.js"
 export default function fetchApi(){
 
-  fetch("./api/perguntas.json")
+  fetch("../js/api/perguntas.json")
   .then(r => {
     return r.json()
   })
@@ -51,7 +51,4 @@ export default function fetchApi(){
 
     return shuffle(btns)
   }
-
-
-
 }
