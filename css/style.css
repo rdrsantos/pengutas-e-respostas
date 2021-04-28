@@ -5,20 +5,21 @@
 }
 
 body{
-  background-color: #ccc;
+  background-color: #87f8;
 }
 
 .container{
   max-width: 900px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
   background-color: #87f;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
+  border-radius: 4px;
 }
 
 .titulo{
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-bottom: 4px solid;
   text-align: center;
   padding-bottom: 10px;
@@ -41,7 +42,7 @@ body{
 }
 
 .pergunta-titulo{
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 

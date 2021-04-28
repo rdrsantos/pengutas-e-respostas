@@ -10,17 +10,17 @@ export default function passarPerguntas(){
   })
   perguntasDiv[0].style.display = "flex"
 
-  let c = 10
+  let c = 20
   let counter = 0
   let timer;
   
   function cronometro() {
     timer = setInterval(() => {
       tempo.innerText = c--  
-      (c <= 4) ? tempo.style.color = "darkred" : tempo.style.color = "#fff"
+      (c <= 4) ? tempo.style.color = "red" : tempo.style.color = "#fff"
       
       if (c < 0) {
-        c = 10
+        c = 20
         passarPergunta()
       }
     }, 1000)
